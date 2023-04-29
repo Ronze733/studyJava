@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "my-font";
+        src: url();
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        background-color: antiquewhite;
+        height: 80vh;
+        width: 80%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu {
+        position: relative;
+        width: 80%;
+        background-color: black;
+        color: white;
+        height: 50px;
+        z-index: 50;
+        text-align: center;
+      }
+
+      .contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+        width: 79.9%;
+        height: 70%;
+        border: 1px solid black;
+      }
+
+      .item {
+        position: relative;
+      }
+
+      .movietext {
+        position: absolute;
+        color: yellow;
+        top: 250px;
+        left: 300px;
+        font-size: 20pt;
+        font-style: initial;
+        letter-spacing: 7px;
+        font-weight: 1000;
+      }
+
+      #tbl {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+      }
+
+      #tbl-img {
+        width: 80%;
+      }
+
+      #tbl-title {
+        font-size: 30pt;
+        color: yellow;
+        font-weight: 600;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        letter-spacing: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <table width="700px" ; height="500px" style="background-color: aquamarine">
+      <tr>
+        <td>
+          <table id="tbl" width="600px" ; height="400px">
+            <tr height="40px">
+              <td align="center" style="color: white; background-color: black">
+                제목
+              </td>
+            </tr>
+            <tr>
+              <td
+                align="center"
+                style="background-color: beige; position: relative"
+              >
+                <img id="tbl-img" src="IronMan.jpg" alt="" />
+                <span id="tbl-title">IronMan</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+    <div class="container">
+      <div class="menu">jm's world</div>
+      <div class="contents">
+        <div class="item">
+          <img src="IronMan.jpg" alt="" width="600px" />
+          <div class="movietext">아이언맨</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

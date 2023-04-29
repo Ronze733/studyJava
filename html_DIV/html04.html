@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Down menu</title>
+    <style>
+      ul,
+      ol,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.myMenu > li {
+        display: inline-block;
+        width: 80px;
+        padding: 5px;
+        background-color: beige;
+        text-align: center;
+        position: relative;
+      }
+
+      ul.myMenu > li ul.submenu {
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+      }
+
+      ul.myMenu > li:hover ul.submenu {
+        display: block;
+      }
+
+      ul.myMenu > li ul.submenu > li {
+        display: inline-block;
+        width: 80px;
+        padding: 5px 10px;
+        background-color: rgb(174, 230, 247);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <ul class="myMenu">
+      <li class="menu1">menu1</li>
+      <li class="menu2">
+        menu2
+        <ul class="menu2_s submenu">
+          <li>menu 2-1</li>
+          <li>menu 2-2</li>
+          <li>menu 2-3</li>
+          <li>menu 2-4</li>
+        </ul>
+      </li>
+      <li class="menu3">
+        menu3
+        <ul class="menu3_s submenu">
+          <li>menu 3-1</li>
+          <li>menu 3-2</li>
+          <li>menu 3-3</li>
+          <li>menu 3-4</li>
+        </ul>
+      </li>
+      <li class="menu4">menu 4</li>
+      <li class="menu5">menu 5</li>
+    </ul>
+  </body>
+</html>

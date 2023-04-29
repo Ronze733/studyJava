@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          mode: "fade",
+          captions: true,
+          slideWidth: 600,
+        });
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      /* .container {
+        width: 500px;
+        height: 600px;
+        border: 1px solid black;
+      }
+
+      .header {
+        height: 60px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      .nav {
+        display: flex;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="header">title</div>
+      <div class="header nav">
+        <div>a</div>
+        <div>a</div>
+        <div>a</div>
+        <div>a</div>
+      </div>
+      <div>content</div>
+    </div> -->
+    <table id="site-tbl" border="1">
+      <tr>
+        <td>
+          <a href="index.html">jm's website</a>
+        </td>
+      </tr>
+    </table>
+    <table id="site-menu-tbl" border="1">
+      <tr>
+        <td><a class="menu-class" href="menu.html">menu</a></td>
+        <td><a class="menu-class" href="join.html">가입</a></td>
+        <td><a class="menu-class" href="slider.html">슬라이드</a></td>
+        <td><a href="https://www.naver.com" target="_blank">네이버로</a></td>
+        <td><a class="menu-class" href="login.html">로그인</a></td>
+        <td><a class="menu-class" href="">나이</a></td>
+      </tr>
+    </table>
+    <table id="content-tbl">
+      <tr>
+        <td>
+          <div class="slider">
+            <div>
+              <img
+                src="https://bxslider.com/assets/coffee1-7325690f507d48962d312be15d9d8929be4a5ff04d184d5ed0a96c1b27940260.jpg"
+                title="Coffee 1"
+              />
+            </div>
+            <div>
+              <img
+                src="https://bxslider.com/assets/coffee2-8bb17517b21cc5b38f3ea7d14cfc4b4c82cc51b99e82bfc3a6d02688ab6c5988.jpg"
+                title="Coffee 2"
+              />
+            </div>
+            <div>
+              <img
+                src="https://bxslider.com/assets/coffee3-02c76c3b922183d7c5144e6856065ad68834ddc7ab5367481a225c516a308cb8.jpg"
+                title="Coffee 3"
+              />
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

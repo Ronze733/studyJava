@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        /* flex-direction: column; */
+        background-color: yellow;
+      }
+
+      .item {
+        flex-basis: 250px;
+        flex-shrink: 0;
+        /* width: 100px;
+        word-wrap: break-word; */
+      }
+      /* .item:nth-child(1) {
+        flex-grow: 1;
+      }
+      .item:nth-child(2) {
+        flex-grow: 2;
+      }
+      .item:nth-child(3) {
+        flex-grow: 1;
+      } */
+
+      .item:nth-child(2) {
+        z-index: 1;
+        transform: scale(2);
+      }
+      .item:nth-child(3) {
+        z-index: 1;
+        transform: scale(3);
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <div class="item" style="background-color: antiquewhite">AAA</div>
+      <div class="item" style="background-color: aqua">BBBBBBBBBBBB</div>
+      <div class="item" style="background-color: red">CCCCCCC</div>
+    </div>
+  </body>
+</html>

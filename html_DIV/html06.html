@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        background-color: antiquewhite;
+        height: 1500px;
+      }
+
+      .menu {
+        width: 100%;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        height: 50px;
+        z-index: 50;
+      }
+
+      .content {
+        position: relative;
+        background-color: aquamarine;
+        top: 50px;
+        height: 500px;
+      }
+
+      .items {
+        display: flex;
+      }
+
+      .item {
+        background-color: cornflowerblue;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      }
+
+      .itemD {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        height: 200px;
+        width: 200px;
+        z-index: 5;
+        border: 1px solid black;
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">menu</div>
+      <div class="content">
+        <div class="items">
+          <div class="item">A</div>
+          <div class="item">B</div>
+        </div>
+        <div class="items">
+          <div class="item">C</div>
+          <div class="itemD">D</div>
+        </div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQX1J1OCW6-8DmB6eYYVM__XX9zKx8gAfW2Q&usqp=CAU"
+      alt="강아지 사진입니다."
+      width="200px"
+      title="강아지 사진"
+    />
+
+    <!--
+        - 상대경로 (.html) 기준
+            801호 어디? => 옆 강의장
+
+        - 절대경로 => 서울 종로 코아빌딩 8층 801호
+
+        .. : 한단계 위로
+        . : 현재 폴더
+        / : 거기에
+      -->
+
+    <img src="images.jfif" alt="" width="168" />
+    <img src="../무쇠보따리.jfif" alt="" width="200" />
+
+    <!-- .mp4 -->
+    <video
+      src="pexels-ana-benet-8243574-720x1280-30fps.mp4"
+      width="600"
+      controls
+      autoplay
+      loop
+    ></video>
+
+    <!-- 나머지 pdf -->
+    <embed
+      src="pexels-ana-benet-8243574-720x1280-30fps.mp4"
+      type=""
+      height="600"
+    />
+  </body>
+</html>
